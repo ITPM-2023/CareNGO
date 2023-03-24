@@ -48,7 +48,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
             <button className='button' type='submit' disabled={FetchData}>
               Log in
             </button>
-            <Route exact path="/register" component={Regsiter} />
+            
             <Link to="/register" className='link'>
               Register
             </Link>
