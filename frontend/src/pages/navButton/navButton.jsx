@@ -23,12 +23,12 @@ function NavigationButtons() {
         case 1:
             return <Login />
         case 2:
-            <Login />
+            return <Login />
         case 3:
             <Login />
         default:
             return (
-                
+
                 <div className="button-container">
                     <div>
                         <div className="button-row">
@@ -41,7 +41,7 @@ function NavigationButtons() {
                         </div>
                     </div>
                 </div>
-                
+
             );
     }
 }
