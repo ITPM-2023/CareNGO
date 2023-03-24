@@ -21,11 +21,11 @@ function NavigationButtons() {
         case 0:
             return <Login />
         case 1:
-            return <Link to="/page2" className="button button-green">Go to Page 2</Link>;
+            return <Login />
         case 2:
-            return <Link to="/page3" className="button button-red">Go to Page 3</Link>;
+            return <Login />
         case 3:
-            return <Link to="/page4" className="button button-yellow">Go to Page 4</Link>;
+            return <Login />
         default:
             return (
                 
