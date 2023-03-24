@@ -2,6 +2,7 @@ import express from "express";
 import index from "../models/index";
 
 const router = express.Router();
+
 //save 
 router.post('/post/save',(req,res)=>{
     let newPost = new Posts (req.body);
