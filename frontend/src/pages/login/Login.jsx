@@ -5,6 +5,7 @@ import { Context } from "../../context/Context"
 import back from "../../assets/images/my-account.jpg"
 import axios from "axios"
 import Regsiter from './Regsiter' 
+import { BrowserRouter, Route } from 'react-router-dom';
 
   const Login = () => {
   const userRef = useRef()
@@ -47,8 +48,8 @@ import Regsiter from './Regsiter'
             <button className='button' type='submit' disabled={FetchData}>
               Log in
             </button>
-
-            <Link to={Regsiter} className='link'>
+            <Route exact path="/register" component={Regsiter} />
+            <Link to="/register" className='link'>
               Register
             </Link>
           </form>
