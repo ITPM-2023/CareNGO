@@ -25,7 +25,7 @@ function NavigationButtons() {
         case 2:
             <Login />
         case 3:
-            return <Link to="/page4" className="button button-yellow">Go to Page 4</Link>;
+            <Login />
         default:
             return (
                 
