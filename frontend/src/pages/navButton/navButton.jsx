@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './navButton.css';
+import Login from '../login/Login';
+
 
 function NavigationButtons() {
     const [selectedButton, setSelectedButton] = useState(null);
@@ -17,7 +19,7 @@ function NavigationButtons() {
 
     switch (selectedButton) {
         case 0:
-            return <Link to="/page1" className="button button-blue">Go to Page 1</Link>;
+            return <Login />
         case 1:
             return <Link to="/page2" className="button button-green">Go to Page 2</Link>;
         case 2:
@@ -26,6 +28,7 @@ function NavigationButtons() {
             return <Link to="/page4" className="button button-yellow">Go to Page 4</Link>;
         default:
             return (
+                
                 <div className="button-container">
                     <div>
                         <div className="button-row">
@@ -38,6 +41,7 @@ function NavigationButtons() {
                         </div>
                     </div>
                 </div>
+                
             );
     }
 }
