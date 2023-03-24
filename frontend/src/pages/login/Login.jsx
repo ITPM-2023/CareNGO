@@ -48,7 +48,7 @@ import Regsiter from './Regsiter'
               Log in
             </button>
 
-            <Link to='{Regsiter}' className='link'>
+            <Link to={Regsiter} className='link'>
               Register
             </Link>
           </form>
