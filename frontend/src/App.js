@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import NavigationButtons from './pages/navButton/navButton';
 import { BrowserRouter } from 'react-router-dom';
@@ -6,10 +5,9 @@ import React, { useContext } from "react"
 import { Context } from "./context/Context"
 
 
-
 function App() {
-    //after login
-    const { user } = useContext(Context)
+  //after login
+  const { user } = useContext(Context)
   return (
     <BrowserRouter>
       <div className="App">
@@ -18,6 +16,8 @@ function App() {
         </div>
       </div>
     </BrowserRouter>
+
+
   );
 }
 
