@@ -1,8 +1,17 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
+//const postRoutes = require("./Routes/posts");
 
 //invoking express
 const app = express();
+
+//app middleware
+app.use(bodyParser.json());
+
+//route middleware
+
+//app.use("/Posts", postRoutes);
 
 //declaring a port to run the app
 const PORT = 8000;
