@@ -25,7 +25,7 @@ function NavigationButtons() {
         case 2:
             return <Login />
         case 3:
-            <Login />
+            return <Login />
         default:
             return (
 
