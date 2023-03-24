@@ -4,6 +4,7 @@ import { Link } from "react-router-dom"
 import { Context } from "../../context/Context"
 import back from "../../assets/images/my-account.jpg"
 import axios from "axios"
+import Regsiter from './Regsiter' 
 
   const Login = () => {
   const userRef = useRef()
@@ -47,7 +48,7 @@ import axios from "axios"
               Log in
             </button>
 
-            <Link to='/register' className='link'>
+            <Link to='{Regsiter}' className='link'>
               Register
             </Link>
           </form>
