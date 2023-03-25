@@ -16,7 +16,6 @@ function App() {
           <NavigationButtons />
         </div>
           <Regsiter/>
-
       </div>
     </BrowserRouter>
 
