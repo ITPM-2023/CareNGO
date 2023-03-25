@@ -1,6 +1,6 @@
 import './App.css';
 import NavigationButtons from './pages/navButton/navButton';
-import { BrowserRouter, Route,Routes } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import React, { useContext } from "react";
 import { Context } from "./context/Context";
 import Regsiter from './pages/login/Regsiter';
