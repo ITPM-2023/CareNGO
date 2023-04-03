@@ -17,6 +17,7 @@ function NavigationButtons() {
         }, 100);
     }, []);
 
+    //swi
     switch (selectedButton) {
         case 0:
             return <Login />

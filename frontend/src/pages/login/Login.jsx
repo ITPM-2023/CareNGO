@@ -1,13 +1,14 @@
 import React, { useContext, useRef } from "react"
 import "./login.css"
-import { Link } from "react-router-dom"
 import { Context } from "../../context/Context"
 import back from "../../assets/images/my-account.jpg"
 import axios from "axios"
-import Regsiter from './Regsiter' 
-import { BrowserRouter, Route } from 'react-router-dom';
 
-  const Login = () => {
+
+
+
+
+const Login = () => {
   const userRef = useRef()
   const passRef = useRef()
   const { dispatch, FetchData } = useContext(Context)
@@ -28,6 +29,8 @@ import { BrowserRouter, Route } from 'react-router-dom';
   }
   //console.log(user)
   console.log(FetchData)
+
+
   return (
     <>
       <section className='login'>
@@ -48,15 +51,16 @@ import { BrowserRouter, Route } from 'react-router-dom';
             <button className='button' type='submit' disabled={FetchData}>
               Log in
             </button>
-            
-            <Link to="/register" className='link'>
-              Register
-            </Link>
+
+
+            Register
+
           </form>
         </div>
       </section>
     </>
   )
 }
+
 
 export default Login;
