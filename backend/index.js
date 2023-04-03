@@ -17,7 +17,7 @@ app.use("/Posts", postRoutes);
 const PORT = 8000;
 
 //Make DB Connection
-const DB_URL = 'mongodb+srv://himasha:himasha24@cluster0.fpb7ado.mongodb.net/backend?retryWrites=true&w=majority';
+const DB_URL = 'mongodb+srv://himasha:himasha24@new.3hgpv5f.mongodb.net/?retryWrites=true&w=majority';
 
 mongoose.connect(DB_URL,{
     useNewUrlParser : true,
