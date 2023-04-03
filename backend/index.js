@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const postRoutes = require("./Routes/posts");
+const cors = require('cors');
 
 //invoking express
 const app = express();
@@ -12,7 +13,7 @@ app.use(bodyParser.json());
 //route middleware
 
 app.use("/Posts", postRoutes);
-
+app.use(cors());
 //declaring a port to run the app
 const PORT = 8000;
 
