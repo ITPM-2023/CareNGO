@@ -1,4 +1,4 @@
-const mongoose = require(mongoose);
+const mongoose = require('mongoose');
 
 //declare a variable and initailize it to mongoose
 const postSchema = new mongoose.Schema({
