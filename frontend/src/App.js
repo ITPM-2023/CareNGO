@@ -1,24 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import AddForm from './components/AddForm';
+import SuccessfulPage from './components/SuccessfulPage';
+import ViewDetails from './components/ViewDetails';
+import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div>
+      Hi
+      <Router>
+          <Routes>
+              <Route path='/' element={<AddForm/>}/>
+          </Routes>
+
+          <Routes>
+              <Route path='/SuccessfulPage' element={<SuccessfulPage/>}/>
+          </Routes>
+
+          <Routes>
+              <Route path='/ViewDetails' element={<ViewDetails/>}/>
+          </Routes>
+    </Router>
+
+    
+
     </div>
+    
+    
   );
 }
 
