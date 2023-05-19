@@ -1,34 +1,23 @@
+import Home from './components/Home';
+import Add from './components/Add';
+import Edit from './components/Edit'
 import './App.css';
-import AddForm from './components/AddForm';
-import SuccessfulPage from './components/SuccessfulPage';
-import ViewDetails from './components/ViewDetails';
+import './bootstrap.min.css'
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
-
-
 function App() {
   return (
-
-    <div>
-      Hi
-      <Router>
+    <div className="App">
+      <header className="App-header">
+        {/* for path setting */}
+        <Router>
           <Routes>
-              <Route path='/' element={<AddForm/>}/>
+            <Route path='/' element={<Home/>}/>
+            <Route path='/Add' element={<Add/>}/>
+            <Route path='/Edit/:id' element={<Edit/>}/>
           </Routes>
-
-          <Routes>
-              <Route path='/SuccessfulPage' element={<SuccessfulPage/>}/>
-          </Routes>
-
-          <Routes>
-              <Route path='/ViewDetails' element={<ViewDetails/>}/>
-          </Routes>
-    </Router>
-
-    
-
+        </Router>       
+      </header>
     </div>
-    
-    
   );
 }
 
